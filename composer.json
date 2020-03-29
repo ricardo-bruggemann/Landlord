@@ -1,5 +1,5 @@
 {
-    "name": "hipsterjazzbo/landlord",
+    "name": "ricardo-bruggemann/Landlord",
     "description": "A simple, single database multi-tenancy solution for Laravel 5.2+",
     "license": "MIT",
     "keywords": [
@@ -10,31 +10,35 @@
     ],
     "authors": [
         {
+            "name": "Ademir Mazer Jr",
+            "email": "ademir.mazer.jr@torzer.com"
+        },
+        {
             "name": "Caleb Fidecaro",
             "email": "calebfidecaro@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.6.0",
-        "illuminate/support": "5.2.*|5.3.*|5.4.*|5.5.*|5.6.*"
+        "illuminate/support": "5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0"
     },
     "require-dev": {
         "mockery/mockery": "~0.9|~1.0",
-        "phpunit/phpunit": "5.5.*|6.0.*|7.0.*",
-        "laravel/framework": "5.2.*|5.3.*|5.4.*|5.5.*|5.6.*"
+        "phpunit/phpunit": "5.5.*|6.0.*|7.0.*|^8.0",
+        "laravel/framework": "5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0"
     },
     "autoload": {
         "psr-4": {
-            "HipsterJazzbo\\Landlord\\": "src/"
+            "Torzer\\Awesome\\Landlord\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "HipsterJazzbo\\Landlord\\LandlordServiceProvider"
+                "Torzer\\Awesome\\Landlord\\LandlordServiceProvider"
             ],
             "aliases": {
-                "Landlord": "HipsterJazzbo\\Landlord\\Facades\\Landlord"
+                "Landlord": "Torzer\\Awesome\\Landlord\\Facades\\Landlord"
             }
         }
     }
